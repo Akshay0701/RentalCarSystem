@@ -9,10 +9,10 @@
     tools:context=".MainActivity">
     <TextView
         android:layout_width="match_parent"
-        android:text="Car Rental System"
+        android:text="Universal Rental Application"
         android:textStyle="bold"
         android:id="@+id/txt"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:layout_gravity="center"
         android:gravity="center"
         android:padding="10dp"
@@ -23,7 +23,7 @@
         android:layout_below="@+id/txt"
         android:src="@drawable/banner"
         android:id="@+id/img"
-        android:layout_height="wrap_content"></ImageView>
+        android:layout_height="200dp"></ImageView>
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="horizontal"
@@ -36,7 +36,7 @@
             android:id="@+id/user_login"
             android:layout_width="match_parent"
             android:layout_weight="1"
-            app:cardCornerRadius="12dp"
+            app:cardCornerRadius="0dp"
             app:cardElevation="10dp"
             android:layout_marginRight="10dp"
             app:cardBackgroundColor="@color/colorPrimary"
@@ -66,7 +66,7 @@
             android:id="@+id/vendor_login"
             android:layout_width="match_parent"
             android:layout_weight="1"
-            app:cardCornerRadius="12dp"
+            app:cardCornerRadius="0dp"
             app:cardElevation="10dp"
             android:layout_marginRight="10dp"
             app:cardBackgroundColor="@color/colorPrimary"
@@ -100,9 +100,9 @@
         android:layout_width="match_parent"
         android:layout_weight="1"
         android:layout_marginLeft="20dp"
-        app:cardCornerRadius="12dp"
+        app:cardCornerRadius="0dp"
         app:cardElevation="10dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="25dp"
         app:cardBackgroundColor="@color/colorPrimary"
         android:layout_height="170dp">
         <LinearLayout

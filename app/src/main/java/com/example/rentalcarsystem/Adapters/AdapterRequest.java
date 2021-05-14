@@ -124,7 +124,8 @@ public class AdapterRequest extends RecyclerView.Adapter<AdapterRequest.MyHolder
                         c.add(Calendar.DAY_OF_MONTH, Integer.parseInt(book.getRentForNumberOfDays()));
                         //Date after adding the days to the given date
                         dueDateStr = sdf.format(c.getTime());
-                        OrderPlaced orderPlaced =new OrderPlaced( dueDateStr,issueDateStr,book.getpAddress(),book.getpAvailable(),book.getpId(),book.getpImageUrl(),book.getpName(),book.getpType(),book.getTotalPrice(),book.getUserEmail(),book.getUserId(),book.getVendorId());
+                        int totalPrice=Integer.parseInt(book.getTotalPrice())*Integer.parseInt(book.getRentForNumberOfDays());
+                        OrderPlaced orderPlaced =new OrderPlaced( dueDateStr,issueDateStr,book.getpAddress(),book.getpAvailable(),book.getpId(),book.getpImageUrl(),book.getpName(),book.getpType(),""+totalPrice,book.getUserEmail(),book.getUserId(),book.getVendorId());
                         FirebaseDatabase.getInstance().getReference("OrderPlaced").child(book.getUserId()+book.getpId()).setValue(orderPlaced);
                         //image
                         Query fquery= FirebaseDatabase.getInstance().getReference("OrderRequest").orderByChild("pId").equalTo(book.getpId());

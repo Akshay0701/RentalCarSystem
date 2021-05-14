@@ -27,4 +27,10 @@
         android:name="com.example.rentalcarsystem.User.ui.AccountFragment"
         android:label="Account"
         tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.rentalcarsystem.User.logout_user"
+        android:label="Account"
+        tools:layout="@layout/fragment_logout_user" />
 </navigation>

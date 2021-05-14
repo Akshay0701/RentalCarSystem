@@ -5,8 +5,8 @@
     <color name="transperant">#702E2E2E</color>
     <color name="colorAccent">#FAFAFA</color>
     <color name="colorgray">#702E2E2E</color>
-    <color name="colorPrimary">#1E96FF</color>
-    <color name="colorPrimaryDark">#0064BC</color>
+    <color name="colorPrimary">#FF5B27</color>
+    <color name="colorPrimaryDark">#FF5722</color>
     <color name="colorPrimaryFadded">#ADB9B9B9</color>
     <color name="colorPrimaryblack">#D5292929</color>
 </resources>

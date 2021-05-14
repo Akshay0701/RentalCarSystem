@@ -46,13 +46,15 @@ public class AdapterOrderPlaced extends RecyclerView.Adapter<AdapterOrderPlaced.
         final String address= productsList.get(position).getpAddress();
         final String price= productsList.get(position).getTotalPrice();
         final String imageUrl= productsList.get(position).getpImageUrl();
+        final String start=productsList.get(position).getIssuedDate();
+        final String due=productsList.get(position).getDueDate();
 
         //setdata
         Picasso.get().load(imageUrl).into(holder.img);
         holder.pName.setText(""+name);
         holder.totalPrice.setText("Total Price : "+ price);
         holder.vendorId.setText("Vendor Id : "+vId);
-        holder.address.setText(address);
+        holder.address.setText("Due Date :"+due);
         //handle click
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {

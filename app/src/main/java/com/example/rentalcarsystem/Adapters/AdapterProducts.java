@@ -96,7 +96,7 @@ public class AdapterProducts extends RecyclerView.Adapter<AdapterProducts.MyHold
     private void showDialog(final Products book) {
         //this function is for removing book from database
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
-        alertDialogBuilder.setMessage("Do You Want To Delete This Book");
+        alertDialogBuilder.setMessage("Do You Want To Delete This Product?");
         alertDialogBuilder.setPositiveButton("yes",
                 new DialogInterface.OnClickListener() {
                     @Override

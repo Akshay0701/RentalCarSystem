@@ -5,7 +5,7 @@
         <item>device</item>
         <item>others</item>
     </string-array>
-    <string name="app_name">RentalCarSystem</string>
+    <string name="app_name">Universal Rental Application</string>
     <string name="title_activity_home_page">HomePage</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

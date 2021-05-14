@@ -59,7 +59,6 @@ public class UserLogin extends AppCompatActivity {
                 String email,password;
                 email=user_login_email.getText().toString();
                 password=user_login_password.getText().toString();
-                Toast.makeText(UserLogin.this, "sadas", Toast.LENGTH_SHORT).show();
                 if(!email.equals("")||!password.equals("")){
                     SharedPreferences.Editor editor;
                     editor= PreferenceManager.getDefaultSharedPreferences(UserLogin.this).edit();

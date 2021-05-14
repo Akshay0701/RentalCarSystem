@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:text="Placed Order"
+        android:text="View Users"
         android:textColor="@color/colorPrimaryblack"
         android:textSize="30dp"
         android:textStyle="bold"

@@ -43,7 +43,7 @@ public class AdapterImageProduct extends RecyclerView.Adapter<AdapterImageProduc
         final String imageUrl= productsList.get(position).getpImageUrl();
 
         //setdata
-        Picasso.get().load(imageUrl).into(holder.img);
+        Picasso.get().load(imageUrl).placeholder(R.drawable.productlogo).into(holder.img);
         //handle click
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
